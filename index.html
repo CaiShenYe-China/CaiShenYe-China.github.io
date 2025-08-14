@@ -1,11 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>CSY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的博客</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>CSY的个人主页</h1>
-    <h1>Hello ~</h1>
+    <header class="site-header">
+        <h1>我的技术博客</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="#">关于</a></li>
+                <li><a href="#">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="blog-posts">
+            <article class="post-preview">
+                <h2><a href="post.html">如何学习前端开发</a></h2>
+                <div class="post-meta">
+                    <span class="date">2023年5月15日</span>
+                    <span class="author">作者: 张三</span>
+                </div>
+                <p class="excerpt">前端开发是一个不断发展的领域，本文将介绍如何系统地学习前端开发...</p>
+                <a href="post.html" class="read-more">阅读更多</a>
+            </article>
+
+            <article class="post-preview">
+                <h2><a href="post.html">JavaScript最佳实践</a></h2>
+                <div class="post-meta">
+                    <span class="date">2023年4月28日</span>
+                    <span class="author">作者: 李四</span>
+                </div>
+                <p class="excerpt">编写高质量的JavaScript代码需要遵循一些最佳实践，本文将介绍其中最重要的几点...</p>
+                <a href="post.html" class="read-more">阅读更多</a>
+            </article>
+
+            <article class="post-preview">
+                <h2><a href="post.html">CSS Grid布局指南</a></h2>
+                <div class="post-meta">
+                    <span class="date">2023年3月10日</span>
+                    <span class="author">作者: 王五</span>
+                </div>
+                <p class="excerpt">CSS Grid是现代网页布局的强大工具，本文将带你从基础到高级使用技巧...</p>
+                <a href="post.html" class="read-more">阅读更多</a>
+            </article>
+        </section>
+
+        <aside class="sidebar">
+            <div class="about-widget">
+                <h3>关于我</h3>
+                <p>一名热爱技术的前端开发者，喜欢分享知识和经验。</p>
+            </div>
+            <div class="categories-widget">
+                <h3>分类</h3>
+                <ul>
+                    <li><a href="#">前端开发</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">HTML</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2023 我的技术博客. 保留所有权利.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
