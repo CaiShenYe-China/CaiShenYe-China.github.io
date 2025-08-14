@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章标题 - 我的博客</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>我的技术博客</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="#">关于</a></li>
+                <li><a href="#">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container single-post">
+        <article>
+            <h2>如何学习前端开发</h2>
+            <div class="post-meta">
+                <span class="date">2023年5月15日</span>
+                <span class="author">作者: 张三</span>
+            </div>
+            <div class="post-content">
+                <p>前端开发是一个不断发展的领域，涵盖了HTML、CSS和JavaScript等技术。要系统地学习前端开发，建议按照以下步骤进行：</p>
+                
+                <h3>1. 掌握HTML基础</h3>
+                <p>HTML是网页的骨架，学习HTML标签和语义化是第一步。</p>
+                
+                <h3>2. 学习CSS样式</h3>
+                <p>CSS控制网页的外观，包括布局、颜色和响应式设计。</p>
+                
+                <h3>3. JavaScript编程</h3>
+                <p>JavaScript为网页添加交互功能，是现代前端开发的核心。</p>
+                
+                <h3>4. 学习框架和工具</h3>
+                <p>掌握React、Vue等流行框架以及Webpack等构建工具。</p>
+                
+                <p>持续学习和实践是成为优秀前端开发者的关键。</p>
+            </div>
+        </article>
+
+        <div class="post-navigation">
+            <a href="#" class="prev-post">← 上一篇文章</a>
+            <a href="#" class="next-post">下一篇文章 →</a>
+        </div>
+
+        <section class="comments">
+            <h3>评论</h3>
+            <div class="comment-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">评论</label>
+                        <textarea id="comment" name="comment" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">提交评论</button>
+                </form>
+            </div>
+            
+            <div class="comment-list">
+                <div class="comment">
+                    <div class="comment-meta">
+                        <span class="comment-author">李四</span>
+                        <span class="comment-date">2023年5月16日</span>
+                    </div>
+                    <div class="comment-content">
+                        <p>非常好的文章，对我帮助很大！</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2023 我的技术博客. 保留所有权利.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
