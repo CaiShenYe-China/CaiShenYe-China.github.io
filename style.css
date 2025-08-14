@@ -1,0 +1,223 @@
+/* 全局样式 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* 头部样式 */
+.site-header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+.site-header h1 {
+    margin: 0;
+    padding: 0 20px;
+}
+
+.site-header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    display: flex;
+}
+
+.site-header nav ul li {
+    margin-right: 20px;
+}
+
+.site-header nav ul li a {
+    color: white;
+}
+
+/* 文章列表 */
+.blog-posts {
+    flex: 2;
+    margin-right: 30px;
+}
+
+.post-preview {
+    background: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.post-preview h2 {
+    margin-top: 0;
+}
+
+.post-meta {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.post-meta .date {
+    margin-right: 15px;
+}
+
+.excerpt {
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    background: #2c3e50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.read-more:hover {
+    background: #34495e;
+    text-decoration: none;
+}
+
+/* 侧边栏 */
+.sidebar {
+    flex: 1;
+}
+
+.about-widget, .categories-widget {
+    background: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.categories-widget ul {
+    list-style: none;
+    padding: 0;
+}
+
+.categories-widget ul li {
+    margin-bottom: 10px;
+}
+
+/* 文章详情页 */
+.single-post article {
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.post-content {
+    margin-top: 20px;
+}
+
+.post-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+/* 评论区域 */
+.comments {
+    background: white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.comment-form {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.submit-btn {
+    background: #2c3e50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #34495e;
+}
+
+.comment {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.comment:last-child {
+    border-bottom: none;
+}
+
+.comment-meta {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.comment-author {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* 页脚 */
+.site-footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .blog-posts {
+        margin-right: 0;
+    }
+}
